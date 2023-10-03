@@ -2,6 +2,7 @@
 tasks:
 - before: |
     sudo apt -y install cmake
+    sudo apt -y install cxxtest
     cmake -S. -Bbuild -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
     cmake --build build --target all 
 
